@@ -1,0 +1,22 @@
+{
+  "name": "corona-tracker",
+  "version": "1.0.0",
+  "description": "Live Tracker for Corona Virus (Covid-19)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsand8813/covid-tracker.git"
+  },
+  "author": "Agus Juliana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsand8813/covid-tracker/issues"
+  },
+  "homepage": "https://github.com/bsand8813/covid-tracker#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
