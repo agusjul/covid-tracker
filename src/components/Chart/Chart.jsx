@@ -51,13 +51,14 @@ const Chart = ({data : {confirmed,recovered, deaths}, country}) =>{
                 datasets : [{
                     label: 'People',
                     backgroundColor: [
-                        'rgba(0,0,255,0.5)',
-                        'rgba(0,255,0,0.5)',
-                        'rgba(255,0,0,0.5)',
+                        'rgba(255,182,77,1)',
+                        'rgba(64,153,255,1)',
+                        'rgba(255,83,112,1)',
                     ],
                     data: [
                         confirmed.value, recovered.value, deaths.value
-                    ]
+                    ],
+                    
                 }]
 
             }}
@@ -73,7 +74,12 @@ const Chart = ({data : {confirmed,recovered, deaths}, country}) =>{
     
     return(
         <div className={styles.container}>
-            {country ? barChart : lineChart}
+            <div>
+                {barChart}
+            </div>
+            <div>
+                {lineChart}
+            </div>
         </div>
     )
 }

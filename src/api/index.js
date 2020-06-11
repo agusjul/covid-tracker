@@ -44,3 +44,13 @@ export const fetchCountries = async() =>{
         console.log(error);
     }
 }
+
+
+export const fetchConfirmed = async() => {
+    try {
+        const {data} = await axios.get(`${url}/daily`);
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}

@@ -1,25 +1,19 @@
 .container {
-    margin: 50px 0px;
+    width: 80%;
+    margin: 20px 50px;
 }
 
-.card {
-    margin: 0px 2% !important;
-}
-
-.infected {
-    border-bottom: 10px solid rgba(0,0,255,0.5);
+.confirmed {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+    color: white;
 }
 
 .recovered {
-    border-bottom: 10px solid rgba(0,255,0,0.5);
+    background: linear-gradient(45deg,#4099ff,#73b4ff);
+    color: white;
 }
 
 .deaths {
-    border-bottom: 10px solid rgba(255,0,0,0.5);
-}
-
-@media (max-width : 770px){
-    .card {
-        margin: 10% 0 !important;
-    }
+    background: linear-gradient(45deg,#FF5370,#ff869a);
+    color: white;
 }
