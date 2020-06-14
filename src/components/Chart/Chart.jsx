@@ -167,21 +167,23 @@ const Chart = ({data : {confirmed,recovered, deaths}, country}) =>{
                <Card border="0">
                    <Card.Title>Global Data</Card.Title>
                    <Card.Body >
-                        <Card className="m-2 p-2">
+                        <Card className="mt-2 pt-2">
                                 {lineChart}
                         </Card>
-                        <Card className="m-2 p-2">
+                        <Card className="mt-2 pt-2">
                                 {lineChart1}
                         </Card>
                    </Card.Body>
                    
                </Card>
                <Card border="0">
-                   <Card.Body className="m-o p-2">
                    <Card.Title>Data from {country} : </Card.Title>
-                   <Card>
-                     {barChart}
-                     {doughnutChart}
+                   <Card.Body>
+                   <Card className="mt-2 pt-2">
+                        {barChart}
+                   </Card>
+                   <Card className="mt-2 pt-2">
+                        {doughnutChart}
                    </Card>
                    </Card.Body>
                </Card>
